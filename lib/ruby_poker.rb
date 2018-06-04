@@ -8,12 +8,13 @@ class RubyPoker
     @cards = cards
   end
 
-  # implement the 10 hands given definition here: 
+  # implement the hands given definition here: 
   # https://www.cardplayer.com/rules-of-poker/hand-rankings
+  # Do not implement Royal Flush or Straight Flush since input does not consider suit
+  
   # each method should return true or false if #cards meets the criteria
 
-
-  def two_pair
+  def two_of_a_kind
     h = {}
     cards.each do |card|
       h[card] ||= 0
