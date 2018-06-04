@@ -1,5 +1,5 @@
 class RubyPoker
-  
+
   # cards should only accept a 5 value array with a mixture of the following:
   # 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A
   attr_reader :cards
@@ -34,5 +34,6 @@ class RubyPoker
   def validate_and_sanitize_input(cards)
     # Demonstrate error handling for any inputs that do not meet the criteria
     # If valid, also consider normalizing data set (hint: handling input of 1 vs '1')
+    cards
   end
 end
